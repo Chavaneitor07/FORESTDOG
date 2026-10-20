@@ -1,0 +1,78 @@
+/* Presentación común para las páginas de detalle de cada servicio. */
+.detail-page { background: #fffefd; color: #24364a; }
+.detail-page .topline { background: #172a3b; }
+.detail-page header.wrap { border-color: #e7edef; }
+.detail-page .brand-logo { border-color: #d9e8ec; }
+.detail-page .nav-links { color: #3e5261; }
+.detail-page .nav-links a:hover { color: #d84486; }
+.detail-page .nav-cta { color: #251521; }
+
+/* El encabezado combina texto, foto y tarifa para orientar desde el primer vistazo. */
+.service-hero { position: relative; overflow: hidden; padding: 64px 0 70px; background: radial-gradient(ellipse at 90% 15%, #65c9ed20, transparent 30%), #fffefd; }
+.service-hero-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 54px; }
+.service-hero-copy h1 { max-width: 620px; margin: 17px 0 20px; font-size: clamp(48px, 6vw, 76px); line-height: .99; }
+.service-hero-copy h1 em { color: #e95b9b; font-style: normal; }
+.service-hero-copy > p { max-width: 530px; margin-bottom: 25px; color: #5e6c74; font-size: 17px; line-height: 1.75; }
+.service-hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
+.service-hero .btn-services { border-color: #b9c9cd; background: #fff; color: #24364a; }
+.service-photo { position: relative; min-height: 420px; overflow: hidden; border-radius: 190px 190px 27px 27px; background: #eaf7fb; box-shadow: 0 18px 42px #1d3d4c14; }
+.service-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; inset: 0; }
+.service-photo::after { position: absolute; content: ''; inset: 40% 0 0; background: linear-gradient(transparent, #102436a6); pointer-events: none; }
+.service-photo figcaption { position: absolute; z-index: 1; right: 22px; bottom: 22px; left: 22px; color: #fff; font: 700 22px Fraunces, serif; }
+.service-price-badge { position: absolute; z-index: 2; top: 24px; right: 18px; padding: 14px 18px; border-radius: 17px; background: #fff; box-shadow: 0 12px 30px #10243624; color: #24364a; transform: rotate(3deg); }
+.service-price-badge small { display: block; margin-bottom: 3px; color: #52636b; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.service-price-badge b { color: #28548e; font: 700 31px/1 Fraunces, serif; }
+
+/* Datos breves y secciones de lectura que funcionan igual en móvil y escritorio. */
+.service-facts { border-block: 1px solid #d5eaf2; background: #eaf7fb; }
+.service-facts-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding-block: 22px; }
+.service-fact { display: flex; align-items: center; gap: 12px; color: #385061; font-size: 13px; font-weight: 700; }
+.service-fact i { display: grid; width: 40px; height: 40px; flex: 0 0 40px; place-items: center; border-radius: 14px; background: #fff; color: #28548e; font-size: 18px; font-style: normal; }
+.detail-section { padding: 76px 0; }
+.detail-section.tint { background: #f4f8f8; }
+.detail-heading { max-width: 700px; margin-bottom: 32px; }
+.detail-heading h2 { margin: 12px 0; font-size: clamp(36px, 4.5vw, 55px); line-height: 1.05; }
+.detail-heading p { margin-bottom: 0; color: #5e6c74; font-size: 16px; line-height: 1.75; }
+.detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.detail-card { padding: 24px; border: 1px solid #dfe7e9; border-radius: 20px; background: #fff; box-shadow: 0 10px 26px #1d3d4c08; }
+.detail-card .detail-icon { display: grid; width: 46px; height: 46px; margin-bottom: 16px; place-items: center; border-radius: 15px; background: #eaf7fb; font-size: 22px; }
+.detail-card h3 { margin-bottom: 8px; color: #24364a; font: 700 22px Fraunces, serif; }
+.detail-card p { margin-bottom: 0; color: #5e6c74; font-size: 14px; line-height: 1.7; }
+.price-panel { display: grid; grid-template-columns: .8fr 1.2fr; gap: 30px; padding: 30px; border: 1px solid #dfe7e9; border-radius: 24px; background: #fff; box-shadow: 0 12px 30px #1d3d4c0c; }
+.price-panel h3 { margin: 9px 0; font: 700 29px Fraunces, serif; }
+.price-panel p { color: #5e6c74; font-size: 14px; line-height: 1.7; }
+.price-list { display: grid; align-content: start; }
+.price-line { display: flex; align-items: baseline; justify-content: space-between; gap: 15px; padding: 14px 0; border-bottom: 1px solid #e5ebeb; }
+.price-line:last-child { border-bottom: 0; }
+.price-line span { color: #52636b; }
+.price-line b { color: #28548e; font: 700 25px Fraunces, serif; white-space: nowrap; }
+.detail-note { margin: 18px 0 0; color: #65727b; font-size: 13px; line-height: 1.7; }
+.detail-callout { padding: 54px 0; }
+.detail-callout-box { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 36px; border: 1px solid #f3d0df; border-radius: 24px; background: linear-gradient(120deg, #ffe8f1, #e6f7fc 58%, #fff5cf); }
+.detail-callout-box h2 { margin: 10px 0; font-size: clamp(30px, 4vw, 42px); }
+.detail-callout-box p { max-width: 600px; margin-bottom: 0; color: #4d5b62; line-height: 1.7; }
+.detail-callout-box .btn { flex: 0 0 auto; }
+.detail-footer { background: #172a3b; }
+
+/* Menos columnas y botones de ancho completo facilitan el uso con una mano. */
+@media (max-width: 820px) {
+  .service-hero-grid { gap: 30px; }
+  .service-photo { min-height: 360px; }
+  .detail-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 620px) {
+  .service-hero { padding: 40px 0 46px; }
+  .service-hero-grid { grid-template-columns: 1fr; gap: 30px; }
+  .service-hero-copy { text-align: center; }
+  .service-hero-copy .eyebrow { justify-content: center; }
+  .service-hero-copy > p { margin-inline: auto; font-size: 15px; }
+  .service-hero-actions { justify-content: center; }
+  .service-photo { width: calc(100% - 12px); min-height: 340px; margin-inline: auto; border-radius: 155px 155px 24px 24px; }
+  .service-facts-inner { grid-template-columns: 1fr; gap: 12px; padding-block: 17px; }
+  .detail-section { padding: 58px 0; }
+  .detail-grid, .price-panel { grid-template-columns: 1fr; }
+  .price-panel { gap: 8px; padding: 23px; }
+  .detail-callout { padding: 44px 0; }
+  .detail-callout-box { align-items: stretch; flex-direction: column; padding: 26px 22px; }
+  .detail-callout-box .btn { width: 100%; }
+}
