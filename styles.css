@@ -449,3 +449,36 @@ footer { background: #172a3b; }
   .tariff::before { top: 25%; left: 2%; }
   .contact::before { top: 45%; left: 2%; }
 }
+
+/* Las tarjetas completas enlazan al detalle: no hace falta acertar en el CTA. */
+.service-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.service-card:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 5px;
+}
+.service-card:active { transform: scale(.99); }
+.service-card-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2px;
+  color: var(--service-accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+.service-card-link b { font-size: 17px; transition: transform .2s ease; }
+.service-card:hover .service-card-link b,
+.service-card:focus-visible .service-card-link b { transform: translateX(4px); }
+
+/* El foco y la acción táctil siguen claros en tarjetas apiladas en móvil. */
+@media (max-width: 620px) {
+  .service-card, .service-card:last-child { min-height: 250px; }
+  .service-card-link { min-height: 48px; font-size: 14px; }
+}
