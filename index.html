@@ -61,7 +61,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261021-5">
+    <link rel="stylesheet" href="styles.css?v=20261026-5">
   </head>
   <body>
     <!-- Mensaje de marca: frase breve para reforzar la promesa del servicio. -->
@@ -206,6 +206,19 @@
           </span>
         </div>
       </div>
+      <!-- Aviso estacional colocado después de la franja introductoria y antes de Servicios. -->
+      <div class="wrap seasonal-announcement">
+        <aside class="seasonal-promo" aria-labelledby="home-season-title">
+          <span class="seasonal-promo-mark" aria-hidden="true">✦</span>
+          <div class="seasonal-promo-copy">
+            <span class="seasonal-promo-kicker">Cupo limitado · Reserva con anticipación</span>
+            <h3 id="home-season-title">Temporada alta</h3>
+            <p>Del 20 de noviembre de 2026 al 10 de enero de 2027</p>
+          </div>
+          <div class="seasonal-promo-rate"><span>Pensión por noche</span><strong>$290</strong></div>
+          <a class="seasonal-promo-cta" href="https://wa.me/525514169236?text=Hola%20Forest%20Dog%2C%20quiero%20reservar%20pensi%C3%B3n%20en%20temporada%20alta">Consultar fechas ↗</a>
+        </aside>
+      </div>
       <!-- Servicios: resumen de guarderia, hotel y spa. -->
       <section class="section" id="servicios">
         <div class="wrap">
@@ -234,7 +247,7 @@
               </div>
               <div class="service-card-content">
                 <div class="service-card-title"><span class="service-icon" aria-hidden="true">🌿</span><h3>Guardería</h3></div>
-                <p>Convivencia, juegos y paseos para que disfrute el día. Desde $120.</p>
+                <p>Convivencia, juegos y paseos para que disfrute el día. Desde $150 por día.</p>
                 <span class="service-card-link">Conocer guardería <b aria-hidden="true">↗</b></span>
               </div>
             </a>
@@ -396,11 +409,11 @@
               </div>
               <div class="tariff-price">
                 <b>
-                  $120
+                  $150–$170
                 </b>
               </div>
               <p class="tariff-detail">
-                Ideal para cambiar la rutina y pasar el día en Forest Dog.
+                Por día · lunes a viernes $150 · sábado $170 · 8:00 a. m.–8:00 p. m. Paquete de 4 semanas: $2,500 (5 días por semana).
               </p>
               <a class="tariff-cta" href="guarderia.html">
                 Ver información de guardería ↗
@@ -423,11 +436,11 @@
               </div>
               <div class="tariff-price">
                 <b>
-                  $200
+                  $250
                 </b>
               </div>
               <p class="tariff-detail">
-                Una estancia para que esté acompañado mientras estás fuera.
+                Por noche · lunes a sábado, entrada 8:00 a. m.–8:00 p. m. · domingo, 8:00 a. m.–3:00 p. m.
               </p>
               <a class="tariff-cta" href="pension.html">
                 Ver información de pensión ↗
@@ -508,8 +521,13 @@
             </div>
           </article>
           <p class="tariff-note">
-            Precios sujetos a confirmación por WhatsApp. Pregunta por disponibilidad, duración y condiciones de cada servicio.
+            Precios en pesos mexicanos. Confirma disponibilidad y condiciones antes de reservar. La estancia de pensión se cobra por noche, de 8:00 a. m. a 12:00 p. m. del día siguiente.
           </p>
+<!-- Requisitos esenciales resumidos en portada; cada página explica sus condiciones. -->
+          <section class="home-requirements" aria-labelledby="home-requirements-title">
+            <div class="home-requirements-heading"><span class="eyebrow">Antes de reservar</span><h3 id="home-requirements-title">Unos datos para preparar su visita.</h3><p>Para guardería y pensión, comparte una foto de su cartilla para revisar que sus vacunas y cuidados estén al corriente.</p></div>
+            <div class="home-requirements-links"><a href="guarderia.html#requisitos"><span aria-hidden="true">🐾</span><span><b>Requisitos de guardería</b><small>Alimento, collar y horarios de entrega</small></span><b aria-hidden="true">↗</b></a><a href="pension.html#requisitos"><span aria-hidden="true">🛏</span><span><b>Requisitos de pensión</b><small>Vacunas, equipaje y horarios de salida</small></span><b aria-hidden="true">↗</b></a></div>
+          </section>
         </div>
       </section>
       <!-- Conversion: WhatsApp y telefono al final del recorrido. -->
